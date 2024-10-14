@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/*영어폰트 지마켓산스*/
+@font-face {
+  font-family: 'GmarketSans';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range:U+0041-005A, U+0061-007A;	/* 영문 대소문자 */
+}
+
+/*한글폰트 프리탠다드*/
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range:U+AC00-D7A3;	/* 한글 */
+}

@@ -1,0 +1,309 @@
+@charset "utf-8";
+
+/**************************header***********************************/
+header{
+  border-bottom: 1px solid #3e3e3e;
+  position: static;
+}
+
+header .gnb > li > a{
+  color: #3e3e3e;
+}
+
+header .gnb > li .depth2{
+  background-color: #222;
+}
+
+header .menu{
+  color: #3e3e3e;
+}
+
+/**************************main-banner***********************************/
+#main-banner{
+  width: 100%;
+  height: 60vh;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#main-banner .sub-txt{
+  width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#main-banner .sub-txt h2{
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+#main-banner .sub-txt p{
+  margin-top: 25px;
+  font-size: 2.2rem;
+}
+
+#main-banner .sub-txt p br.m{
+  display: none;
+}
+
+#main-banner .sub-btn{
+  display: flex;
+  gap: 30px;
+  text-align: center;
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+}
+
+#main-banner .sub-btn li{
+  align-items: center;
+  text-transform: uppercase;
+}
+
+#main-banner .sub-btn li a{
+  display: block;
+  border: 2px solid #F1854C;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #F1854C;
+  transition: color 0.5s, background-color 0.5S;
+}
+
+#main-banner .sub-btn li:hover a{
+  background-color: #F1854C;
+  color: #fff;
+}
+
+@media screen and (max-width : 1200px) {
+  #main-banner{
+    height: 40vh;
+  }
+
+  #main-banner .sub-txt h2{
+    font-size: 3.2rem;
+  }
+
+  #main-banner .sub-txt p{
+    margin-top: 20px;
+    font-size: 2rem;
+  }
+
+  #main-banner .sub-btn li a{
+    font-size: 1.6rem;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width : 700px) {
+
+  #main-banner .sub-txt h2{
+    font-size: 2rem;
+  }
+
+  #main-banner .sub-txt p{
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+
+  #main-banner .sub-txt p br.m{
+    display: block;
+  }
+
+  #main-banner .sub-btn{
+    gap: 10px;
+  }
+
+  #main-banner .sub-btn li a{
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+}
+
+/**********************bg***********************/
+.bg{
+  width: 100%;
+  height: 60vh;
+  background: url(../images/sub/storyBg.jpg) no-repeat center / cover;
+  position: relative;
+}
+
+.bg .txt{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.bg .txt p{
+  font-size: 7rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width : 1200px) {
+  .bg{
+    height: 40vh;
+  }
+
+  .bg .txt p{
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width : 700px) {
+  .bg .txt p{
+    font-size: 2rem;
+  }
+}
+
+/*******************************pauselab********************************/
+#pauselab .wrapper{
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+#pauselab .txt{
+  width: 45%;
+}
+
+#pauselab .txt p{
+  font-size: 7rem;
+  font-weight: bold;
+  text-align: left;
+  position: sticky;
+  top: 100px;
+  height: inherit;
+}
+
+#pauselab .con-wrapper{
+  padding: 200px 0 0;
+  width: calc(55% - 100px);
+}
+
+#pauselab .con-wrapper > div{
+  margin-bottom: 160px;
+}
+
+#pauselab .con-wrapper > div:last-child{
+  margin-bottom: 0;
+}
+
+#pauselab .con-wrapper > div h3{
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#pauselab .con-wrapper > div p{
+  font-size: 2rem;
+}
+
+/*태블릿*/
+@media screen and (max-width : 1200px) {
+  #pauselab .txt p{
+    font-size: 4rem;
+  }
+
+  #pauselab .con-wrapper{
+    padding-top: 100px;
+    width: calc(55% - 50px);
+  }
+
+  #pauselab .con-wrapper > div{
+    margin-bottom: 100px;
+  }
+
+  #pauselab .con-wrapper > div h3{
+    font-size: 2.8rem;
+  }
+}
+
+/*모바일*/
+@media screen and (max-width : 700px) {
+  #pauselab .txt p{
+    font-size: 2rem;
+  }
+
+  #pauselab .con-wrapper > div{
+    margin-bottom: 60px;
+  }
+
+  #pauselab .con-wrapper > div h3{
+    font-size: 1.6rem;
+  }
+
+  #pauselab .con-wrapper > div p{
+    font-size: 1.2rem;
+  }
+}
+
+/****************************ceo******************************/
+#ceo{
+  width: 100%;
+  display: flex;
+  padding: 300px 0 200px;
+}
+
+#ceo img{
+  width: 45%;
+}
+
+#ceo .ceo_txt{
+  width: 50%;
+  position: relative;
+}
+
+#ceo .ceo_txt .txt{
+  padding-right: 10%;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+}
+
+#ceo .ceo_txt .txt .tit{
+  font-size: 1.6rem;
+  color: #F1854C;
+  text-transform: uppercase;
+}
+
+#ceo .ceo_txt .txt .name{
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+#ceo .ceo_txt p:last-child{
+  font-size: 2rem;
+}
+
+@media screen and (max-width : 1200px) {
+  #ceo{
+    display: block;
+    padding: 200px 0;
+  }
+
+  #ceo img{
+    width: 100%;
+  }
+  
+  #ceo .ceo_txt{
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  #ceo .ceo_txt .txt{
+    padding-right: 0;
+  }
+}
